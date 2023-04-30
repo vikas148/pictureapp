@@ -7,7 +7,7 @@ function App() {
   const [image, setImage] = useState([])
 
   const Getimage = () => {
-    axios.get("https://api.unsplash.com/search/photos?page=1&query=plane&client_id=mtpY0NRCgNOcpVVUK4NyFIVsgncFbazHWeYSTP2twaU")
+    axios.get("https://api.unsplash.com/search/photos?page=1&query=galaxy&client_id=mtpY0NRCgNOcpVVUK4NyFIVsgncFbazHWeYSTP2twaU")
       .then((response) => {
         // console.log(response);
         setImage(response.data.results)
